@@ -1,14 +1,26 @@
 [
     {
-        "title": "Test stream (HLS video) - replace me",
+        "title": "Respiration du matin",
+        "subtitle": "Vidéo · test stream",
+        "type": "video",
         "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
         "format": "hls",
         "loop": false
     },
     {
-        "title": "Test stream (Apple HLS) - replace me",
+        "title": "Ambiance boucle",
+        "subtitle": "Vidéo · boucle · test",
+        "type": "video",
         "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8",
         "format": "hls",
+        "loop": true
+    },
+    {
+        "title": "Méditation audio",
+        "subtitle": "Audio · remplacez-moi",
+        "type": "audio",
+        "url": "http://192.168.1.10:8000/meditation.mp3",
+        "format": "mp3",
         "loop": true
     }
 ]

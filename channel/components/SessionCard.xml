@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="SessionCard" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" onChange="showContent" />
+        <field id="focusPercent" type="float" onChange="showFocus" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/SessionCard.brs" />
+    <children>
+        <Group id="card" scaleRotateCenter="[190,110]">
+            <Poster uri="pkg:/images/card.png" width="380" height="220" />
+            <Poster id="focusBg" uri="pkg:/images/card_focus.png" width="380" height="220" opacity="0" />
+            <Label id="subtitle" translation="[30,34]" width="320"
+                font="font:SmallestSystemFont" color="0x8A9486FF" />
+            <Label id="title" translation="[30,110]" width="320" height="90"
+                wrap="true" maxLines="2" font="font:MediumBoldSystemFont" color="0xE8E2D4FF" />
+        </Group>
+    </children>
+</component>
