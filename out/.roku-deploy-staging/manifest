@@ -1,9 +1,0 @@
-title=Maison du Calme
-major_version=1
-minor_version=0
-build_version=1
-ui_resolution=fhd
-splash_color=#1A1F1C
-splash_min_time=1000
-mm_icon_focus_hd=pkg:/images/icon_hd.png
-mm_icon_focus_fhd=pkg:/images/icon_fhd.png
