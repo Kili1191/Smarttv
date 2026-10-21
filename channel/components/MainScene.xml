@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <children>
+        <Rectangle id="bg" width="1920" height="1080" color="0x1A1F1CFF" />
+        <Label id="title" text="Maison du Calme" translation="[160,140]"
+            font="font:LargeBoldSystemFont" color="0xE8E2D4FF" />
+        <Label id="subtitle" text="Choose a session" translation="[160,220]"
+            font="font:MediumSystemFont" color="0x9FA89CFF" />
+        <LabelList id="menu" translation="[160,320]" itemSize="[1000,80]"
+            color="0xC9C3B5FF" focusedColor="0x1A1F1CFF" />
+        <Video id="player" width="1920" height="1080" visible="false" />
+    </children>
+</component>
