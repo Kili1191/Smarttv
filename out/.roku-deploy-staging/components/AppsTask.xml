@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="AppsTask" extends="Task">
+    <interface>
+        <field id="apps" type="array" />
+        <field id="error" type="string" />
+        <field id="launch" type="string" alwaysNotify="true" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/AppsTask.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+</component>

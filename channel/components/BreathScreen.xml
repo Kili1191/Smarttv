@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="BreathScreen" extends="Group">
+    <interface>
+        <field id="focusIn" type="boolean" alwaysNotify="true" onChange="onFocusIn" />
+        <field id="action" type="assocarray" alwaysNotify="true" />
+        <field id="techniques" type="array" onChange="buildTiles" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/Common.brs" />
+    <script type="text/brightscript" uri="pkg:/components/BreathScreen.brs" />
+    <children>
+        <Label text="Respiration" translation="[0,80]" color="0xE8E2D4FF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="64" />
+        </Label>
+        <Label id="count" translation="[0,170]" color="0x8A9486FF">
+            <Font role="font" uri="font:SystemFontFile" size="28" />
+        </Label>
+        <MarkupGrid id="grid" translation="[0,240]"
+            itemComponentName="Tile" itemSize="[320,200]" itemSpacing="[30,28]"
+            numColumns="4" numRows="3" drawFocusFeedback="false"
+            vertFocusAnimationStyle="floatingFocus" />
+        <Label id="info" translation="[0,950]" width="1340" height="90" wrap="true" maxLines="2"
+            color="0xC9C3B5FF">
+            <Font role="font" uri="font:SystemFontFile" size="27" />
+        </Label>
+    </children>
+</component>

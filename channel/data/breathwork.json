@@ -1,0 +1,620 @@
+[
+ {
+  "id": "coherence",
+  "title": "Cohérence cardiaque",
+  "category": "CALME",
+  "duration": "5 MIN",
+  "benefit": "6 respirations par minute pendant 5 minutes. Équilibre le système nerveux et la variabilité cardiaque. La base à pratiquer 3 fois par jour.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 30,
+    "steps": [
+     {
+      "p": "in",
+      "s": 5
+     },
+     {
+      "p": "out",
+      "s": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sigh",
+  "title": "Soupir physiologique",
+  "category": "CALME",
+  "duration": "5 MIN",
+  "benefit": "Double inspiration puis longue expiration. La façon la plus rapide d'apaiser le stress, étudiée à Stanford.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 30,
+    "steps": [
+     {
+      "p": "in",
+      "s": 3,
+      "t": "Inspirez par le nez"
+     },
+     {
+      "p": "sniff",
+      "s": 1,
+      "t": "Encore une petite inspiration"
+     },
+     {
+      "p": "out",
+      "s": 6,
+      "t": "Longue expiration par la bouche"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "box",
+  "title": "Respiration carrée",
+  "category": "FOCUS",
+  "duration": "4 MIN",
+  "benefit": "4-4-4-4. Utilisée par les forces spéciales pour garder la tête froide sous pression.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 15,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "hold",
+      "s": 4,
+      "t": "Retenez, poumons pleins"
+     },
+     {
+      "p": "out",
+      "s": 4
+     },
+     {
+      "p": "holdEmpty",
+      "s": 4,
+      "t": "Retenez, poumons vides"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "478",
+  "title": "Respiration 4-7-8",
+  "category": "SOMMEIL",
+  "duration": "1 MIN",
+  "benefit": "Inspirez 4, retenez 7, expirez 8. Calme profond avant de dormir. Commencez par 4 cycles.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 4,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4,
+      "t": "Inspirez par le nez"
+     },
+     {
+      "p": "hold",
+      "s": 7
+     },
+     {
+      "p": "out",
+      "s": 8,
+      "t": "Expirez par la bouche en soufflant"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "exhale",
+  "title": "Expiration prolongée 4-8",
+  "category": "SOMMEIL",
+  "duration": "4 MIN",
+  "benefit": "Une expiration deux fois plus longue que l'inspiration active le frein parasympathique.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 20,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "out",
+      "s": 8,
+      "t": "Expirez lentement"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "belly",
+  "title": "Respiration abdominale",
+  "category": "CALME",
+  "duration": "2 MIN",
+  "benefit": "La respiration de base : le ventre se gonfle, la poitrine reste calme. Idéale pour débuter.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 15,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4,
+      "t": "Inspirez, gonflez le ventre"
+     },
+     {
+      "p": "out",
+      "s": 6,
+      "t": "Expirez, rentrez le ventre"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "triangle",
+  "title": "Respiration triangle",
+  "category": "FOCUS",
+  "duration": "3 MIN",
+  "benefit": "Inspirez, retenez, expirez sur 4 temps. Un rythme simple pour retrouver la concentration.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 15,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "hold",
+      "s": 4
+     },
+     {
+      "p": "out",
+      "s": 4
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "wimhof",
+  "title": "Méthode Wim Hof",
+  "category": "ÉNERGIE",
+  "duration": "8 MIN",
+  "benefit": "3 rounds : 30 respirations profondes, rétention poumons vides, puis récupération. Énergie, froid, résistance au stress.",
+  "rounds": 3,
+  "blocks": [
+   {
+    "repeat": 30,
+    "steps": [
+     {
+      "p": "in",
+      "s": 1.5,
+      "t": "Inspirez à fond"
+     },
+     {
+      "p": "out",
+      "s": 1.5,
+      "t": "Relâchez"
+     }
+    ],
+    "label": "Respirations"
+   },
+   {
+    "repeat": 1,
+    "steps": [
+     {
+      "p": "holdEmpty",
+      "s": 0,
+      "t": "Poumons vides, retenez",
+      "open": true
+     }
+    ],
+    "label": "Rétention"
+   },
+   {
+    "repeat": 1,
+    "steps": [
+     {
+      "p": "in",
+      "s": 2,
+      "t": "Grande inspiration"
+     },
+     {
+      "p": "hold",
+      "s": 15,
+      "t": "Retenez, poumons pleins"
+     },
+     {
+      "p": "out",
+      "s": 2,
+      "t": "Relâchez"
+     }
+    ],
+    "label": "Récupération"
+   }
+  ],
+  "warning": "Technique d'hyperventilation. À pratiquer assis ou allongé, jamais dans l'eau, en conduisant ou debout. Déconseillée en cas de grossesse, d'épilepsie, de problème cardiaque ou d'hypertension. Picotements et légers vertiges sont normaux : arrêtez immédiatement en cas de malaise."
+ },
+ {
+  "id": "tummo",
+  "title": "Tummo — feu intérieur",
+  "category": "ÉNERGIE",
+  "duration": "7 MIN",
+  "benefit": "Respiration tibétaine qui génère de la chaleur : respirations profondes puis rétention avec contraction du bas-ventre.",
+  "rounds": 3,
+  "blocks": [
+   {
+    "repeat": 30,
+    "steps": [
+     {
+      "p": "in",
+      "s": 2,
+      "t": "Inspirez profondément par le ventre"
+     },
+     {
+      "p": "out",
+      "s": 1,
+      "t": "Expirez"
+     }
+    ],
+    "label": "Respirations"
+   },
+   {
+    "repeat": 1,
+    "steps": [
+     {
+      "p": "in",
+      "s": 2,
+      "t": "Inspirez au maximum"
+     },
+     {
+      "p": "hold",
+      "s": 15,
+      "t": "Retenez, contractez le bas-ventre"
+     },
+     {
+      "p": "out",
+      "s": 3,
+      "t": "Relâchez lentement"
+     }
+    ],
+    "label": "Rétention"
+   },
+   {
+    "repeat": 3,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "out",
+      "s": 4,
+      "t": "Respirez normalement"
+     }
+    ],
+    "label": "Repos"
+   }
+  ],
+  "warning": "Technique d'hyperventilation. À pratiquer assis ou allongé, jamais dans l'eau, en conduisant ou debout. Déconseillée en cas de grossesse, d'épilepsie, de problème cardiaque ou d'hypertension. Picotements et légers vertiges sont normaux : arrêtez immédiatement en cas de malaise."
+ },
+ {
+  "id": "bhastrika",
+  "title": "Bhastrika — le soufflet",
+  "category": "ÉNERGIE",
+  "duration": "4 MIN",
+  "benefit": "Inspirations et expirations puissantes par le nez. Réveille le corps et l'esprit en quelques minutes.",
+  "rounds": 3,
+  "blocks": [
+   {
+    "repeat": 20,
+    "steps": [
+     {
+      "p": "in",
+      "s": 1,
+      "t": "Inspirez fort"
+     },
+     {
+      "p": "out",
+      "s": 1,
+      "t": "Expirez fort"
+     }
+    ],
+    "label": "Soufflet"
+   },
+   {
+    "repeat": 1,
+    "steps": [
+     {
+      "p": "in",
+      "s": 3,
+      "t": "Grande inspiration"
+     },
+     {
+      "p": "hold",
+      "s": 10
+     },
+     {
+      "p": "out",
+      "s": 5,
+      "t": "Expirez lentement"
+     }
+    ],
+    "label": "Rétention"
+   },
+   {
+    "repeat": 2,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "out",
+      "s": 6
+     }
+    ],
+    "label": "Repos"
+   }
+  ],
+  "warning": "Technique d'hyperventilation. À pratiquer assis ou allongé, jamais dans l'eau, en conduisant ou debout. Déconseillée en cas de grossesse, d'épilepsie, de problème cardiaque ou d'hypertension. Picotements et légers vertiges sont normaux : arrêtez immédiatement en cas de malaise."
+ },
+ {
+  "id": "kapalabhati",
+  "title": "Kapalabhati — souffle de feu",
+  "category": "ÉNERGIE",
+  "duration": "4 MIN",
+  "benefit": "Expirations courtes et actives par le nez, inspirations passives. Clarté mentale, tonus abdominal. À jeun.",
+  "rounds": 3,
+  "blocks": [
+   {
+    "repeat": 40,
+    "steps": [
+     {
+      "p": "out",
+      "s": 0.5,
+      "t": "Expulsez par le nez"
+     },
+     {
+      "p": "in",
+      "s": 0.5,
+      "t": "Relâchez"
+     }
+    ],
+    "label": "Souffle de feu"
+   },
+   {
+    "repeat": 3,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "out",
+      "s": 6,
+      "t": "Respiration calme"
+     }
+    ],
+    "label": "Repos"
+   }
+  ],
+  "warning": "Technique d'hyperventilation. À pratiquer assis ou allongé, jamais dans l'eau, en conduisant ou debout. Déconseillée en cas de grossesse, d'épilepsie, de problème cardiaque ou d'hypertension. Picotements et légers vertiges sont normaux : arrêtez immédiatement en cas de malaise. À pratiquer à jeun."
+ },
+ {
+  "id": "nadi",
+  "title": "Nadi Shodhana — narines alternées",
+  "category": "PRANAYAMA",
+  "duration": "4 MIN",
+  "benefit": "Pouce sur la narine droite, annulaire sur la gauche. Équilibre les deux hémisphères et apaise le mental.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 8,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4,
+      "t": "Inspirez, narine gauche"
+     },
+     {
+      "p": "hold",
+      "s": 4,
+      "t": "Retenez, narines fermées"
+     },
+     {
+      "p": "out",
+      "s": 8,
+      "t": "Expirez, narine droite"
+     },
+     {
+      "p": "in",
+      "s": 4,
+      "t": "Inspirez, narine droite"
+     },
+     {
+      "p": "hold",
+      "s": 4,
+      "t": "Retenez, narines fermées"
+     },
+     {
+      "p": "out",
+      "s": 8,
+      "t": "Expirez, narine gauche"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bhramari",
+  "title": "Bhramari — l'abeille",
+  "category": "PRANAYAMA",
+  "duration": "2 MIN",
+  "benefit": "Expiration en fredonnant « mmm », index sur les oreilles. La vibration calme le système nerveux presque instantanément.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 10,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4,
+      "t": "Inspirez par le nez"
+     },
+     {
+      "p": "out",
+      "s": 8,
+      "t": "Expirez en fredonnant « mmm »"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ujjayi",
+  "title": "Ujjayi — souffle océanique",
+  "category": "PRANAYAMA",
+  "duration": "3 MIN",
+  "benefit": "Gorge légèrement resserrée, le souffle fait le bruit de l'océan. Ancre l'attention, réchauffe le corps.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 15,
+    "steps": [
+     {
+      "p": "in",
+      "s": 5,
+      "t": "Inspirez, gorge légèrement serrée"
+     },
+     {
+      "p": "out",
+      "s": 7,
+      "t": "Expirez, le son de l'océan"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lion",
+  "title": "Respiration du lion",
+  "category": "ÉNERGIE",
+  "duration": "1 MIN",
+  "benefit": "Bouche grande ouverte, langue sortie, on expire en « Haaa ». Libère la tension du visage et de la gorge.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 6,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4,
+      "t": "Inspirez par le nez"
+     },
+     {
+      "p": "out",
+      "s": 2,
+      "t": "Langue sortie : « Haaa »"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "buteyko",
+  "title": "Pause de contrôle Buteyko",
+  "category": "PERFORMANCE",
+  "duration": "5 MIN",
+  "benefit": "Mesure votre tolérance au CO₂. Votre temps de rétention s'affiche à la fin : sous 20 s, à travailler ; au-delà de 40 s, excellent.",
+  "rounds": 3,
+  "blocks": [
+   {
+    "repeat": 6,
+    "steps": [
+     {
+      "p": "in",
+      "s": 3,
+      "t": "Inspirez doucement par le nez"
+     },
+     {
+      "p": "out",
+      "s": 4,
+      "t": "Expirez sans forcer"
+     }
+    ],
+    "label": "Respiration légère"
+   },
+   {
+    "repeat": 1,
+    "steps": [
+     {
+      "p": "out",
+      "s": 3,
+      "t": "Expiration normale"
+     },
+     {
+      "p": "holdEmpty",
+      "s": 0,
+      "t": "Pincez le nez, attendez la première envie de respirer",
+      "open": true
+     }
+    ],
+    "label": "Pause de contrôle"
+   },
+   {
+    "repeat": 4,
+    "steps": [
+     {
+      "p": "in",
+      "s": 3
+     },
+     {
+      "p": "out",
+      "s": 4,
+      "t": "Respirez légèrement par le nez"
+     }
+    ],
+    "label": "Récupération"
+   }
+  ]
+ },
+ {
+  "id": "resonance",
+  "title": "Respiration de résonance",
+  "category": "CALME",
+  "duration": "5 MIN",
+  "benefit": "Inspiration 4, expiration 6 : le rythme le plus apaisant pour la majorité des gens. Récupération après l'effort.",
+  "rounds": 1,
+  "blocks": [
+   {
+    "repeat": 30,
+    "steps": [
+     {
+      "p": "in",
+      "s": 4
+     },
+     {
+      "p": "out",
+      "s": 6
+     }
+    ]
+   }
+  ]
+ }
+]

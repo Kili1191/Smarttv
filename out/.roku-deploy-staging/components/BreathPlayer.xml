@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="BreathPlayer" extends="Group">
+    <interface>
+        <field id="technique" type="assocarray" alwaysNotify="true" onChange="start" />
+        <field id="done" type="boolean" alwaysNotify="true" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/BreathPlayer.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+    <children>
+        <Poster uri="pkg:/images/bg.jpg" width="1920" height="1080" />
+        <Label id="title" translation="[0,70]" width="1920" horizAlign="center" color="0xE8E2D4FF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="48" />
+        </Label>
+        <Label id="progress" translation="[0,140]" width="1920" horizAlign="center" color="0x8A9486FF">
+            <Font role="font" uri="font:SystemFontFile" size="30" />
+        </Label>
+        <Poster id="halo" uri="pkg:/images/halo.png" width="480" height="480" translation="[720,240]" scaleRotateCenter="[240,240]" />
+        <Poster id="core" uri="pkg:/images/core.png" width="320" height="320" translation="[800,320]" scaleRotateCenter="[160,160]" />
+        <Label id="count" translation="[800,320]" width="320" height="320" horizAlign="center" vertAlign="center" color="0x1A1F1CFF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="88" />
+        </Label>
+        <Label id="phase" translation="[0,820]" width="1920" horizAlign="center" color="0xE8E2D4FF">
+            <Font role="font" uri="font:SystemFontFile" size="54" />
+        </Label>
+        <Label id="detail" translation="[0,900]" width="1920" horizAlign="center" color="0xC9B896FF">
+            <Font role="font" uri="font:SystemFontFile" size="30" />
+        </Label>
+        <Label id="hint" translation="[0,1000]" width="1920" horizAlign="center" color="0x8A9486FF">
+            <Font role="font" uri="font:SystemFontFile" size="24" />
+        </Label>
+        <Animation id="anim" duration="1" repeat="false" easeFunction="inOutQuad">
+            <Vector2DFieldInterpolator id="coreInterp" fieldToInterp="core.scale" key="[0.0, 1.0]" keyValue="[[0.55,0.55],[0.55,0.55]]" />
+            <Vector2DFieldInterpolator id="haloInterp" fieldToInterp="halo.scale" key="[0.0, 1.0]" keyValue="[[0.62,0.62],[0.62,0.62]]" />
+        </Animation>
+        <Timer id="stepTimer" repeat="false" />
+        <Timer id="tick" duration="0.2" repeat="true" />
+    </children>
+</component>

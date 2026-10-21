@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HomeScreen" extends="Group">
+    <interface>
+        <field id="focusIn" type="boolean" alwaysNotify="true" onChange="onFocusIn" />
+        <field id="action" type="assocarray" alwaysNotify="true" />
+        <field id="techniques" type="array" onChange="buildTiles" />
+        <field id="apps" type="array" onChange="buildTiles" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/Common.brs" />
+    <script type="text/brightscript" uri="pkg:/components/QuestionDeck.brs" />
+    <script type="text/brightscript" uri="pkg:/components/HomeScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+    <children>
+        <Label id="greeting" translation="[0,80]" color="0xE8E2D4FF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="76" />
+        </Label>
+        <Label id="dateLine" translation="[0,186]" color="0x8A9486FF">
+            <Font role="font" uri="font:SystemFontFile" size="32" />
+        </Label>
+        <Label text="QUESTION DU MOMENT" translation="[0,282]" color="0xC9B896FF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="22" />
+        </Label>
+        <Label id="question" translation="[0,322]" width="1340" height="180" wrap="true" maxLines="3" color="0xE8E2D4FF">
+            <Font role="font" uri="font:SystemFontFile" size="46" />
+        </Label>
+        <MarkupGrid id="grid" translation="[0,560]" itemComponentName="Tile" itemSize="[320,200]" itemSpacing="[30,28]" numColumns="4" numRows="2" drawFocusFeedback="false" vertFocusAnimationStyle="floatingFocus" />
+        <Timer id="clockTimer" duration="15" repeat="true" />
+        <Timer id="questionTimer" duration="90" repeat="true" />
+    </children>
+</component>

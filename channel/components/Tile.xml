@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Tile" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" onChange="showContent" />
+        <field id="focusPercent" type="float" onChange="showFocus" />
+        <field id="gridHasFocus" type="boolean" onChange="showFocus" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/Tile.brs" />
+    <children>
+        <Group id="card" scaleRotateCenter="[160,100]">
+            <Poster uri="pkg:/images/card_320.png" width="320" height="200" />
+            <Poster id="focusBg" uri="pkg:/images/card_320_focus.png" width="320" height="200" opacity="0" />
+            <Label id="subtitle" translation="[24,24]" width="272" color="0x8A9486FF">
+                <Font role="font" uri="font:SystemFontFile" size="19" />
+            </Label>
+            <Label id="title" translation="[24,92]" width="272" height="84" wrap="true" maxLines="2"
+                vertAlign="bottom" color="0xE8E2D4FF">
+                <Font role="font" uri="font:BoldSystemFontFile" size="30" />
+            </Label>
+            <Poster id="icon" translation="[16,16]" width="288" height="168"
+                loadDisplayMode="scaleToFit" visible="false" />
+        </Group>
+    </children>
+</component>

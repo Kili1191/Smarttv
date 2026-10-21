@@ -3,30 +3,58 @@
     <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
     <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
     <children>
-        <Group id="home">
-            <Poster id="bg" uri="pkg:/images/bg.jpg" width="1920" height="1080" />
-            <Poster id="halo" uri="pkg:/images/halo.png" width="460" height="460" translation="[730,150]" scaleRotateCenter="[230,230]" />
-            <Poster id="core" uri="pkg:/images/core.png" width="300" height="300" translation="[810,230]" scaleRotateCenter="[150,150]" />
-            <Label id="breathLabel" text="Inspirez" width="1920" horizAlign="center" translation="[0,640]" font="font:MediumSystemFont" color="0xC9B896FF" />
-            <Group id="chrome">
-                <Label id="greeting" translation="[140,90]" font="font:LargeBoldSystemFont" color="0xE8E2D4FF" />
-                <Label id="brand" text="MAISON DU CALME" translation="[140,160]" font="font:SmallSystemFont" color="0x8A9486FF" />
-                <Label id="clock" width="300" horizAlign="right" translation="[1480,90]" font="font:LargeSystemFont" color="0xE8E2D4FF" />
-                <RowList id="sessions" translation="[0,760]" itemComponentName="SessionCard" numRows="1" itemSize="[1920,240]" rowItemSize="[[380,220]]" rowItemSpacing="[[30,0]]" showRowLabel="[false]" focusXOffset="[140]" rowFocusAnimationStyle="floatingFocus" drawFocusFeedback="false" />
+        <Poster uri="pkg:/images/bg.jpg" width="1920" height="1080" />
+        <Group id="ui">
+            <Rectangle width="380" height="1080" color="0x0E1210B3" />
+            <Label text="MAISON" translation="[60,80]" color="0xE8E2D4FF">
+                <Font role="font" uri="font:BoldSystemFontFile" size="36" />
+            </Label>
+            <Label text="DU CALME" translation="[60,124]" color="0x8A9486FF">
+                <Font role="font" uri="font:BoldSystemFontFile" size="36" />
+            </Label>
+            <LabelList id="nav" translation="[40,260]" itemSize="[300,72]" itemSpacing="[0,12]" color="0xC9C3B5FF" focusedColor="0x1A1F1CFF" focusBitmapUri="pkg:/images/pill_focus.png" focusFootprintBitmapUri="pkg:/images/pill_footprint.png" vertFocusAnimationStyle="floatingFocus">
+                <ContentNode role="content">
+                    <ContentNode title="   Accueil" />
+                    <ContentNode title="   Respiration" />
+                    <ContentNode title="   Réflexion" />
+                    <ContentNode title="   Applications" />
+                    <ContentNode title="   Sessions" />
+                </ContentNode>
+            </LabelList>
+            <Group translation="[440,0]">
+                <HomeScreen id="homeScreen" />
+                <BreathScreen id="breathScreen" visible="false" />
+                <ReflectScreen id="reflectScreen" visible="false" />
+                <AppsScreen id="appsScreen" visible="false" />
+                <SessionsScreen id="sessionsScreen" visible="false" />
             </Group>
-            <Group id="nowPlaying" visible="false">
-                <Label id="nowTitle" width="1920" horizAlign="center" translation="[0,760]" font="font:LargeBoldSystemFont" color="0xE8E2D4FF" />
-                <Label text="Retour pour arrêter" width="1920" horizAlign="center" translation="[0,840]" font="font:SmallSystemFont" color="0x8A9486FF" />
-            </Group>
+        </Group>
+        <Group id="warning" visible="false">
+            <Rectangle width="1920" height="1080" color="0x0A0D0BF0" />
+            <Label text="AVANT DE COMMENCER" translation="[440,250]" color="0xC9B896FF">
+                <Font role="font" uri="font:BoldSystemFontFile" size="26" />
+            </Label>
+            <Label id="warnTitle" translation="[440,300]" color="0xE8E2D4FF">
+                <Font role="font" uri="font:BoldSystemFontFile" size="60" />
+            </Label>
+            <Label id="warnText" translation="[440,410]" width="1040" height="300" wrap="true" color="0xC9C3B5FF">
+                <Font role="font" uri="font:SystemFontFile" size="34" />
+            </Label>
+            <Label text="OK : commencer   ·   Retour : annuler" translation="[440,760]" color="0x8A9486FF">
+                <Font role="font" uri="font:SystemFontFile" size="28" />
+            </Label>
+        </Group>
+        <BreathPlayer id="player" visible="false" />
+        <Group id="nowPlaying" visible="false">
+            <Label id="nowTitle" width="1920" horizAlign="center" translation="[0,470]" color="0xE8E2D4FF">
+                <Font role="font" uri="font:BoldSystemFontFile" size="64" />
+            </Label>
+            <Label text="Retour pour arrêter" width="1920" horizAlign="center" translation="[0,570]" color="0x8A9486FF">
+                <Font role="font" uri="font:SystemFontFile" size="28" />
+            </Label>
         </Group>
         <Video id="video" width="1920" height="1080" visible="false" />
         <Audio id="audio" />
-        <Animation id="breathe" duration="8" repeat="true" easeFunction="inOutQuad">
-            <Vector2DFieldInterpolator fieldToInterp="core.scale" key="[0.0, 0.5, 1.0]" keyValue="[[0.72,0.72],[1.0,1.0],[0.72,0.72]]" />
-            <Vector2DFieldInterpolator fieldToInterp="halo.scale" key="[0.0, 0.5, 1.0]" keyValue="[[0.7,0.7],[1.12,1.12],[0.7,0.7]]" />
-            <FloatFieldInterpolator fieldToInterp="halo.opacity" key="[0.0, 0.5, 1.0]" keyValue="[0.35, 1.0, 0.35]" />
-        </Animation>
-        <Timer id="phaseTimer" duration="4" repeat="true" />
-        <Timer id="clockTimer" duration="15" repeat="true" />
+        <AppsTask id="appsTask" />
     </children>
 </component>

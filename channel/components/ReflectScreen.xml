@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ReflectScreen" extends="Group">
+    <interface>
+        <field id="focusIn" type="boolean" alwaysNotify="true" onChange="onFocusIn" />
+        <field id="action" type="assocarray" alwaysNotify="true" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/QuestionDeck.brs" />
+    <script type="text/brightscript" uri="pkg:/components/ReflectScreen.brs" />
+    <children>
+        <Label text="Réflexion" translation="[0,80]" color="0xE8E2D4FF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="64" />
+        </Label>
+        <Label id="theme" translation="[0,250]" color="0xC9B896FF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="24" />
+        </Label>
+        <Label id="question" translation="[0,300]" width="1300" height="460" wrap="true" maxLines="6"
+            color="0xE8E2D4FF">
+            <Font role="font" uri="font:SystemFontFile" size="62" />
+        </Label>
+        <Label id="counter" translation="[0,830]" color="0x8A9486FF">
+            <Font role="font" uri="font:SystemFontFile" size="26" />
+        </Label>
+        <Label text="OK : question suivante" translation="[0,880]" color="0x8A9486FF">
+            <Font role="font" uri="font:SystemFontFile" size="26" />
+        </Label>
+    </children>
+</component>
